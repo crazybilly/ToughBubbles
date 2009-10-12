@@ -2,3 +2,23 @@ create new style sheet for mobile users?
 hide 'skip to content' link
 
 what generates the menu?
+
+
+Possible fonts:
+	headings:
+		Fontin
+		Fontin Sans
+		Arial
+		M+ family?
+		Graublau Sans Web
+		Junction
+		Kaffeesatz
+	
+	
+	Body:
+		Arial
+		MGOpen Moderna
+		Graublau Sans Web
+		Fontin Sans
+		Junction
+		Anivers
