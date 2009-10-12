@@ -1,0 +1,113 @@
+/*
+Theme Name: Tough Bubbles 
+Theme URI: http://listento.jaketolbert.com
+Description: a quirk web 2.0 wordpress theme
+Author: crazybilly
+Author URI: http://listen.jaketolbert.com
+Template: Thematic
+Version: 0.1
+.
+Licenced under the Gnu Public License or Creative Commons BY-SA, whichever is most convienent for you
+.
+*/
+
+/* Grab the the Thematic styles
+/* @import url(../thematic/style.css); */
+
+/* Misc stuff from Thematic child sampler */
+	
+	/* Reset browser defaults */
+	@import url('../thematic/library/styles/reset.css');
+	
+	/* Apply basic typography styles */
+	@import url('../thematic/library/styles/typography.css');
+
+	/* Apply basic image styles */
+	@import url('../thematic/library/styles/images.css');
+
+	/* Prepare theme for plugins */
+	@import url('../thematic/library/styles/plugins.css');
+
+/* End Thematic import stuff */
+
+/* Whole body stuff */
+
+#wrapper {
+	width: 960px;
+	margin: auto;
+	color: #404040;
+	}
+
+
+/* Header */
+#blog-title {
+	position: relative;
+	top: 180px;
+	left: 20px;
+	z-index: -10;
+	}
+
+#blog-title a {
+	font-family: Arial; sans-serif;	
+	color: #404040;
+	font-size: 225px;
+	font-weight: bold;
+	text-transform: lowercase;
+	}
+
+h1#blog-description {
+	width: 100%;
+	background: url(images/white.png);
+	border-top: 4px solid #404040;
+	height: 150px;
+	position: relative;
+	top: 187px;
+	width: 100%;
+	z-index: -5;
+	padding-left: 35px;
+	}
+	
+
+/* Nav */
+
+.menu {
+	background: url(images/nav.png) no-repeat;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	}
+
+.skip-link {
+	display: none;
+	}
+
+.menu ul {
+	margin-top: 8px; /* use to adjust vertical position */
+	}
+
+.menu li {
+	display: inline;
+	margin-left: 7px;
+	margin-right: 13px;  /* needs changed */
+	}
+
+#nav-above {
+	display: none;
+	}
+
+/* Main */
+
+#main {
+	margin-top: 100px; /* just to make it easier to see stuff -change later */
+	}
+
+	/* Promo Box 
+		on index only */
+		
+		#index-top {
+		background: url(images/promo-box.png) no-repeat top left;
+		width: 470px;
+		height: 150px;
+		}
+
+		
