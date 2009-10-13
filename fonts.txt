@@ -1,3 +1,13 @@
 http://openfontlibrary.fontly.org/
 http://www.theleagueofmoveabletype.com/
 http://levien.com/type/myfonts/
+
+
+# body: junction
+# main title: mgopen Moderna
+# subtitles: 
+
+
+main title: Vollkorn 126
+subtitles: Fontin SmallCaps 28
+body: Junction 14
