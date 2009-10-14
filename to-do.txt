@@ -3,6 +3,14 @@ hide 'skip to content' link
 
 what generates the menu?
 
+Typography
+	vertical rythym
+	actual sizes (pts or em?)
+	make it fit in the grid
+	write up teh @font-face code
+
+
+
 
 Possible fonts:
 	headings:
