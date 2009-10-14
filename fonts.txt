@@ -15,22 +15,23 @@ body: Junction 14
 
 
 // main title 
-font-family: "Vollkorn"
+font-family: "Vollkorn",Arial
 font-size: 144pt;
 
 //blog-description
 #blog-description {
-	font-family: "Fontin SmallCaps";
+	font-family: "Fontin SmallCaps", Georgia, Arial, sans-serif
 	font-size: 12pt;
 	}
 
 //promo box/other headings
-	font-family: "Fontin SmallCaps";
+	font-family: "Fontin SmallCaps", Georgia, Arial, sans-serif
 	font-size: 24pt;
 
 //body 
 body, input, textarea {
-	font-family: "Junction Regular";
+	font-family: "Junction Regular","Dejua Vu Sans",Verdana,sans-serif
+
 	font-size: 10 // (maybe 12)
 	line-height: 1.5;
 

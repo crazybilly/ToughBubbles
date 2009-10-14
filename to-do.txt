@@ -7,7 +7,10 @@ Typography
 	vertical rythym
 	actual sizes (pts or em?)
 	make it fit in the grid
-	write up teh @font-face code
+*	write up teh @font-face code
+
+Figure out how to edit the crap to wrap the loop in a div
+Figure out how to edit a/o style the meta to look right
 
 
 
