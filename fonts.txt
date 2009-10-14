@@ -11,3 +11,26 @@ http://levien.com/type/myfonts/
 main title: Vollkorn 126
 subtitles: Fontin SmallCaps 28
 body: Junction 14
+
+
+
+// main title 
+font-family: "Vollkorn"
+font-size: 144pt;
+
+//blog-description
+#blog-description {
+	font-family: "Fontin SmallCaps";
+	font-size: 12pt;
+	}
+
+//promo box/other headings
+	font-family: "Fontin SmallCaps";
+	font-size: 24pt;
+
+//body 
+body, input, textarea {
+	font-family: "Junction Regular";
+	font-size: 10 // (maybe 12)
+	line-height: 1.5;
+

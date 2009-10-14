@@ -55,7 +55,7 @@ Licenced under the Gnu Public License or Creative Commons BY-SA, whichever is mo
 	text-transform: lowercase;
 	}
 
-h1#blog-description {
+#blog-description {
 	width: 100%;
 	background: url(images/white.png);
 	border-top: 4px solid #404040;
@@ -91,6 +91,18 @@ h1#blog-description {
 	margin-right: 13px;  /* needs changed */
 	}
 
+.menu a {
+	color: #404040;
+}
+
+.menu a.hover {
+	color: #FFFFFF;
+}
+
+.menu a.visited {
+	color: #404040;
+}
+
 #nav-above {
 	display: none;
 	}
@@ -106,8 +118,39 @@ h1#blog-description {
 		
 		#index-top {
 		background: url(images/promo-box.png) no-repeat top left;
-		width: 470px;
+		width: 100%;
 		height: 150px;
 		}
 
-		
+		#index-top .xoxo ul {
+			width: 100%;
+			}
+
+		#index-top .xoxo .widget_text {
+			float: left;
+			}
+
+		#index-top .widgettitle {
+			font-size: 24pt;
+			padding: 24px 0; /* adjust for rythym */
+			}
+
+		#index-top .xoxo .widget_thematic_rsslinks {
+			float: right;
+			width: 200px; /* change to margin-right: -1500px; after styling */
+			}
+
+	/* Posts */
+
+	.entry-title {
+	}
+
+	.entry-meta {
+	}
+
+	.entry-content {
+	}
+
+	.entry-utility {
+	}
+
