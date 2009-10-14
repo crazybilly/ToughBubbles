@@ -14,22 +14,3 @@ Figure out how to edit a/o style the meta to look right
 
 
 
-
-Possible fonts:
-	headings:
-		Fontin
-		Fontin Sans
-		Arial
-		M+ family?
-		Graublau Sans Web
-		Junction
-		Kaffeesatz
-	
-	
-	Body:
-		Arial
-		MGOpen Moderna
-		Graublau Sans Web
-		Fontin Sans
-		Junction
-		Anivers

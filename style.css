@@ -44,14 +44,14 @@ Licenced under the Gnu Public License or Creative Commons BY-SA, whichever is mo
 
 @font-face {
 	font-family: "Junction Regular";
-	src: url(fonts/Junction.ttf) format("truetype");
+	src: url(fonts/Junction.otf) format("opentype");
 }
 
 
 /* Whole body stuff */
 
 body {
-    font-family: "Junction Regular","Dejua Vu Sans",Verdana,sans-serif;
+    font-family: "Junction Regular","Deja Vu Sans",Verdana,sans-serif;
 	font-size: 10pt;
 	}
 
