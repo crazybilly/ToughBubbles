@@ -13,7 +13,9 @@ Typography
 get columns working
 Figure out how to edit a/o style the meta to look right
 rethink how you use the asides
-
+Find something better for the twitter side, something you can tweak, arrange, etc
+Fix post-title link colors
+menu needs fixing
 
 
 

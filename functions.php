@@ -33,5 +33,21 @@ function index_promo () {
 add_action('thematic_header','index_promo');
 
 
+function twitter_client() {
+	if (is_home() & !is_paged()) {	
+		?>	
+		<div id="twitter-content">
+			<h3 id="twitter-title" class="entry-title">Twitter</h3>
+			<ul id="twitter_update_list"></ul>
+		</div>
+		
+		<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+		<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/crazybilly.json?callback=twitterCallback2&count=6"></script>	
 
+<?
+	}
+}
 
+add_action ('thematic_indexloop','twitter_client');
+
+?>

@@ -202,15 +202,29 @@ pre, code {
 
 #content {
 	float: left;
-	width: 360px;
-	border-right: 1px solid #bbb;
-	padding: 0 40px;
+	width: 680px;
 	}
+
+	/* Twitter */
+
+	#twitter-content {
+		float: right;
+		width: 220px;
+		}
+
+		#twitter-content li {
+			list-style: none;
+			margin: 2em 0;
+			}
 
 	/* Posts */
 
 	.post {
 		margin-bottom: 1em;
+		width: 360px;
+		border-right: 1px solid #bbb;
+		padding: 0 40px;
+		float: left;
 		}
 		
 
@@ -243,9 +257,28 @@ pre, code {
 		margin-bottom: 2.125em;
 		}
 
+#nav-below {
+	display: none;
+	}
+
 /* Sidebar */
 
 .aside {
 	background: url(images/sidebar.png) no-repeat top left;
 	float: right;
 	width: 220px;
+	font-size: 90%;
+	height: 200px;
+	
+	}
+
+.aside li {
+	list-style: none;
+	}
+
+
+/* Footer */
+
+#footer {
+	clear: both;
+	}
