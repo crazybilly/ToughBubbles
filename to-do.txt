@@ -4,13 +4,17 @@ hide 'skip to content' link
 what generates the menu?
 
 Typography
-	vertical rythym
-	actual sizes (pts or em?)
-	make it fit in the grid
+*	vertical rythym
+*	actual sizes (pts or em?)
+*	make it fit in the grid
 *	write up teh @font-face code
 
-Figure out how to edit the crap to wrap the loop in a div
+
+get columns working
 Figure out how to edit a/o style the meta to look right
+rethink how you use the asides
+
+
 
 
 
