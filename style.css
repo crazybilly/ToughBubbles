@@ -278,10 +278,11 @@ pre, code {
 .aside {
 	background: url(images/sidebar.png) no-repeat top left;
 	float: right;
-	width: 220px;
+	width: 200px;
 	font-size: 90%;
 	height: 200px;
-	
+	margin: 0 20px 20px 0;
+	padding: 0 20px; /* use title margins for rhythym */
 	}
 
 .aside li {
