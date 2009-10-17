@@ -42,16 +42,22 @@ Licenced under the Gnu Public License or Creative Commons BY-SA, whichever is mo
 	src: url(fonts/Fontin-SmallCaps.ttf) format("truetype");
 }
 
+/*
 @font-face {
 	font-family: "Junction Regular";
 	src: url(fonts/Junction.otf) format("opentype");
+}*/
+
+@font-face {
+	font-family: "Droid Sans";
+	src: url(fonts/DroidSans.ttf) format("truetype");
 }
 
 
 /* Whole body stuff */
 
 body, input, textarea {
-    font-family: "Junction Regular","Deja Vu Sans",Verdana,sans-serif;
+    font-family: "Droid Sans",Arial,serif;
 	font-size: 84%; /* 13.44 */
 	line-height: 1.5;  /* 20.16 */
 	}
@@ -84,7 +90,7 @@ pre, code {
 	}
 
 #blog-title a {
-    font-family: "Vollkorn", Arial;
+    font-family: "Vollkorn", Arial,sans;
 	color: #404040;
 	font-size: 225px;
 	text-transform: lowercase;
@@ -96,10 +102,10 @@ pre, code {
 	width: 100%;
 	background: url(images/white.png);
 	border-top: 4px solid #404040;
-	height: 53px;
+	height: 60px;
 	position: relative;
 	top: 67px;
-	width: 100%;
+	width: 924px;
 	z-index: -5;
 	padding-left: 35px;
 	}
@@ -158,8 +164,9 @@ pre, code {
 		.promo-box {
 		background: url(images/promo-box.png) no-repeat top left;
 		float: left;
-		width: 440px;
+		width: 400px;
 		padding-left: 20px;
+		padding-right: 40px;
 		height: 140px;
 		}
 
@@ -174,18 +181,23 @@ pre, code {
 				}
 
 		#cartoon {
-			position: absolute;
-			top: 140px;
-			left: 554px;
 			width: 270px;
+			margin: -80px 0 0 -57px;
+			float: left;
 			}
 
 
 		.index-promo #rss-links {
 			float: right;
-			width: 220px; /* change to margin-right: -1500px; after styling */
-			height: 140px;
+			width: 230px; 
+			height: 100px;
+			background: url(images/subscribe.png) no-repeat top left;
+			padding: 40px 0 0 30px;
 			}
+
+			.index-promo img {
+				margin: 0 10px 0 20px;
+				}
 
 /* Main */
 

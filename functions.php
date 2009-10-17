@@ -17,11 +17,11 @@ function index_promo () {
 
 		</div> <!--promo-box-->
 
-		<img id="cartoon" src="http://jaket.is-a-geek.com/demo/wp-content/themes/toughbubbles/mockups/profiles/madmen_fullbody-cutout2.png"/>
+		<img id="cartoon" src="<? bloginfo('stylesheet_directory'); ?>/images/cartoon.png"/>
 
 		<div id="rss-links">
-			<a href="<? bloginfo_rss('url') ?>"><img src="images/RSS-badge.png" alt="Subscribe"></a>
-			<a href="http://www.twitter.com/crazybilly"><img src="images/twitter-badge.png" alt="Follow me on Twitter"></a>
+			<a href="<? bloginfo_rss('url') ?>"><img src="<? bloginfo('stylesheet_directory'); ?>/images/RSS-badge.png" alt="Subscribe"></a>
+			<a href="http://www.twitter.com/crazybilly"><img src="<? bloginfo('stylesheet_directory'); ?>/images/twitter-badge.png" alt="Follow me on Twitter"></a>
 		</div> <!--rss-links-->
 
 	</div> <!--index-promo-->
