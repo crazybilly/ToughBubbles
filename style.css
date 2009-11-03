@@ -206,10 +206,12 @@ pre, code {
 	}
 
 #container {
-	background: url(images/main.png) no-repeat top left;
+	background: url(images/content-fill.png) top left;
 	float: right;
-	width: 700px;
+	width: 698px;
 	padding-top: 40px;
+	-moz-border-radius: 20px;
+	border: 1px solid #BFBFBF;
 	}
 
 #content {
@@ -276,13 +278,15 @@ pre, code {
 /* Sidebar */
 
 .aside {
-	background: url(images/sidebar.png) no-repeat top left;
+	background: url(images/sidebar-fill.png) top left;
 	float: right;
 	width: 200px;
 	font-size: 90%;
-	height: 200px;
 	margin: 0 20px 20px 0;
-	padding: 0 20px; /* use title margins for rhythym */
+	padding: 0 19px; /* use title margins for rhythym */
+	-moz-border-radius: 20px;
+	border: 1px solid #BFBFBF;
+
 	}
 
 .aside li {
