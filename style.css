@@ -211,6 +211,7 @@ pre, code {
 	width: 698px;
 	padding-top: 40px;
 	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
 	border: 1px solid #BFBFBF;
 	}
 
@@ -285,6 +286,7 @@ pre, code {
 	margin: 0 20px 20px 0;
 	padding: 0 19px; /* use title margins for rhythym */
 	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
 	border: 1px solid #BFBFBF;
 
 	}
