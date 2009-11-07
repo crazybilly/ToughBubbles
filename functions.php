@@ -30,9 +30,11 @@ function index_promo () {
 	}
 }
 
+// insert the promo
 add_action('thematic_header','index_promo');
 
 
+//add in my twitter updates
 function twitter_client() {
 	if (is_home() & !is_paged()) {	
 		?>	
@@ -48,6 +50,26 @@ function twitter_client() {
 	}
 }
 
+//insert twitter
 add_action ('thematic_indexloop','twitter_client');
+
+
+//add subtitle (via wp subtitle plugin)
+function subtitles($posttitle) {
+
+	$yo = get_the_subheading('53');
+	echo $yo;
+
+	$tryit = $posttitle;
+	$tryit .= "<h3 class='subtitle'>";
+	$tryit .= $yo;
+	$tryit .= "</h3>";
+	
+	return $tryit;
+
+	}
+
+//insert subtitles
+add_filter ('thematic_postheader_posttitle','subtitles');
 
 ?>

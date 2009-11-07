@@ -229,7 +229,7 @@ if (isset($dl_pp_ga)) {
 	//Actions - use these to ADD code
 
 		//call the sample action
-		add_action('wp_head', array(&$pp_ga, 'addHeaderCode'),1);
+//		add_action('wp_head', array(&$pp_ga, 'addHeaderCode'),1);
 
 		//get the default values when you turn the plugin on
 		add_action('popular-posts-by-ga/pp-ga.php', array (&$dl_pp_ga, 'init'));
@@ -242,4 +242,3 @@ if (isset($dl_pp_ga)) {
 }
 
 ?>
-
