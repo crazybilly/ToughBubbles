@@ -15,16 +15,11 @@
    sodipodi:version="0.32"
    inkscape:version="0.46"
    version="1.0"
-<<<<<<< HEAD:mockups/Mockup4b.svg
    sodipodi:docname="Mockup4.svg"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape">
-=======
-   sodipodi:docname="Mockup4b.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    inkscape:export-filename="C:\Documents and Settings\jtolbert\Desktop\wordpress themeing\toughbubbles\mockups\Mockup4.png"
    inkscape:export-xdpi="82.893227"
    inkscape:export-ydpi="82.893227">
->>>>>>> e6eb95a2bafe992076e91840fe2ceb038f09ee97:mockups/Mockup4b.svg
   <metadata
      id="metadata2425">
     <rdf:RDF>
@@ -115,17 +110,14 @@
        inkscape:collect="always"
        xlink:href="#linearGradient3206"
        id="linearGradient3212"
-<<<<<<< HEAD:mockups/Mockup4b.svg
        x1="-883.87634"
        y1="520.49658"
        x2="261.48841"
        y2="520.49658"
-=======
-       x1="150.26776"
-       y1="1023.9566"
-       x2="150.26776"
-       y2="419.5"
->>>>>>> e6eb95a2bafe992076e91840fe2ceb038f09ee97:mockups/Mockup4b.svg
+	   x1-huh="150.26776"
+       y1-huh="1023.9566"
+       x2-huh="150.26776"
+       y2-huh="419.5"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
@@ -178,8 +170,6 @@
        x2="452.64673"
        y2="-5.0631623"
        gradientUnits="userSpaceOnUse" />
-<<<<<<< HEAD:mockups/Mockup4b.svg
-=======
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3206"
@@ -190,7 +180,6 @@
        x2="150.26776"
        y2="419.5"
        gradientTransform="translate(7.4892578e-6,239.00684)" />
->>>>>>> e6eb95a2bafe992076e91840fe2ceb038f09ee97:mockups/Mockup4b.svg
   </defs>
   <sodipodi:namedview
      id="base"
@@ -202,15 +191,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-<<<<<<< HEAD:mockups/Mockup4b.svg
      inkscape:zoom="1"
      inkscape:cx="458.6885"
      inkscape:cy="823.79921"
-=======
-     inkscape:zoom="0.5"
-     inkscape:cx="977.8285"
-     inkscape:cy="498.33887"
->>>>>>> e6eb95a2bafe992076e91840fe2ceb038f09ee97:mockups/Mockup4b.svg
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="false"
@@ -218,13 +201,8 @@
      inkscape:guide-bbox="true"
      inkscape:window-width="1280"
      inkscape:window-height="778"
-<<<<<<< HEAD:mockups/Mockup4b.svg
      inkscape:window-x="0"
      inkscape:window-y="22">
-=======
-     inkscape:window-x="154"
-     inkscape:window-y="154">
->>>>>>> e6eb95a2bafe992076e91840fe2ceb038f09ee97:mockups/Mockup4b.svg
     <sodipodi:guide
        position="30,0"
        orientation="1,0"
@@ -469,7 +447,6 @@
        ry="14.541147"
        rx="6.9463978" />
     <rect
-<<<<<<< HEAD:mockups/Mockup4b.svg
        style="fill:url(#linearGradient3220);fill-opacity:1;stroke:#777777;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.46666667000000001;opacity:1"
        id="rect3334"
        width="219.46445"
@@ -479,8 +456,6 @@
        ry="14.541147"
        rx="6.9463978" />
     <rect
-=======
->>>>>>> e6eb95a2bafe992076e91840fe2ceb038f09ee97:mockups/Mockup4b.svg
        style="fill:url(#linearGradient3364);fill-opacity:1;stroke:#777777;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.46666667000000001"
        id="rect3336"
        width="701.08301"
@@ -490,23 +465,16 @@
        ry="31.807526"
        rx="22.190388" />
     <image
-<<<<<<< HEAD:mockups/Mockup4b.svg
-       y="143.09009"
-       x="450.22974"
        id="image3469"
        height="277.60001"
        width="299.24771"
-       sodipodi:absref="C:\Documents and Settings\jtolbert\Desktop\wordpress themeing\toughbubbles\mockups\profiles\madmen_fullbody-cutout.png"
-       xlink:href="profiles/madmen_fullbody-cutout2.png" />
-=======
        y="140"
        x="458"
        id="image3469"
        height="276.62946"
        width="270"
        sodipodi:absref="C:\Documents and Settings\jtolbert\Desktop\wordpress themeing\toughbubbles\mockups\profiles\madmen_fullbody-cutout.png"
-       xlink:href="profiles\madmen_fullbody-cutout.png" />
->>>>>>> e6eb95a2bafe992076e91840fe2ceb038f09ee97:mockups/Mockup4b.svg
+       xlink:href="profiles\madmen_fullbody-cutout2.png" />
     <rect
        style="fill:url(#linearGradient3475);fill-opacity:1;stroke:#777777;stroke-width:0.83437978999999984;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.46666667000000001;opacity:0.72596154"
        id="rect3473"
@@ -565,8 +533,6 @@
        style="opacity:1;fill:#ef9610;fill-opacity:1;stroke:#777777;stroke-width:0.3370322;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.46666667"
        d="M 943.11447,318.93422 C 942.88475,318.05571 943.60832,315.86832 944.12866,315.86832 C 944.41679,315.86832 944.55174,316.45956 944.55174,317.722 C 944.55174,319.31272 944.4617,319.57567 943.91698,319.57567 C 943.56786,319.57567 943.20674,319.28702 943.11448,318.93422 L 943.11447,318.93422 z"
        id="path3512" />
-<<<<<<< HEAD:mockups/Mockup4b.svg
-=======
     <rect
        style="opacity:1;fill:url(#linearGradient3664);fill-opacity:1;stroke:#777777;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.46666667"
        id="rect3662"
@@ -576,6 +542,5 @@
        y="659.00684"
        ry="14.541147"
        rx="6.9463978" />
->>>>>>> e6eb95a2bafe992076e91840fe2ceb038f09ee97:mockups/Mockup4b.svg
   </g>
 </svg>
