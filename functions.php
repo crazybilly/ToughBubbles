@@ -74,7 +74,6 @@ function subtitles($posttitle) {
 add_filter ('thematic_postheader_posttitle','subtitles');
 */
 
-/*
 function toughbubbles_postheader_posttitle() {
     global $id, $post, $authordata;
 
@@ -91,16 +90,15 @@ function toughbubbles_postheader_posttitle() {
         $posttitle .= __('Permalink to ', 'thematic') . the_title_attribute('echo=0');
         $posttitle .= '" rel="bookmark">';
         $posttitle .= get_the_title();   
-        $posttitle .= "</a> yo </h2>\n";
-        //$posttitle .= get_the_subheading(59,"<h3>","</h3>","false");
+        $posttitle .= "</a> </h2>\n";
+        $posttitle .= get_the_subheading($id,"<h3 class='subtitle'>","</h3>","false");
 	}
 
-	$posttitle = apply_filters('thematic_postheader_posttitle',$posttitle); 
 
 	return $posttitle;
 }   
 
 add_filter('thematic_postheader_posttitle','toughbubbles_postheader_posttitle')
-*/
+
 
 ?>
