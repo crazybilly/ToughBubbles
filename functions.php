@@ -55,32 +55,13 @@ add_action ('thematic_indexloop','twitter_client');
 
 
 //add subtitle (via wp subtitle plugin)
-/*
-function subtitles($posttitle) {
-
-	$yo = get_the_subheading('53');
-	echo $yo;
-
-	$tryit = $posttitle;
-	$tryit .= "<h3 class='subtitle'>";
-	$tryit .= $yo;
-	$tryit .= "</h3>";
-	
-	return $tryit;
-
-	}
-
-//insert subtitles
-add_filter ('thematic_postheader_posttitle','subtitles');
-*/
-
 function toughbubbles_postheader_posttitle() {
     global $id, $post, $authordata;
 
     
     if (is_single() || is_page()) {
         $posttitle = '<h1 class="entry-title">' . get_the_title() . "</h1>\n";
-	//	$posttitle .= the_subheading( /*'<h2 class="subtitle">', '</h2>'  );
+        $posttitle .= get_the_subheading($id,"<h3 class='subtitle'>","</h3>",FALSE);
     } elseif (is_404()) {    
         $posttitle = '<h1 class="entry-title">' . __('Not Found', 'thematic') . "</h1>\n";
     } else {
@@ -91,14 +72,67 @@ function toughbubbles_postheader_posttitle() {
         $posttitle .= '" rel="bookmark">';
         $posttitle .= get_the_title();   
         $posttitle .= "</a> </h2>\n";
-        $posttitle .= get_the_subheading($id,"<h3 class='subtitle'>","</h3>","false");
+        $posttitle .= get_the_subheading($id,"<h3 class='subtitle'>","</h3>",FALSE);
 	}
 
 
 	return $posttitle;
 }   
 
-add_filter('thematic_postheader_posttitle','toughbubbles_postheader_posttitle')
+add_filter('thematic_postheader_posttitle','toughbubbles_postheader_posttitle');
 
+
+//change entry-meta
+function toughbubbles_postheader_postmeta() {
+    global $id, $post, $authordata;
+
+	$postmeta = '<div class="entry-meta">';
+    //$postmeta .= '</a></span><span class="meta-sep meta-sep-entry-date"> | </span>';
+    //$postmeta .= '<span class="meta-prep meta-prep-entry-date">' . __('Published: ', 'thematic') . '</span>';
+    	//the date
+		$postmeta .= '<span class="entry-date"><abbr class="published" title="';
+			//note: change the date format in the wp admin settings
+	    	$postmeta .= get_the_time(thematic_time_title()) . '">';
+	    	$postmeta .= get_the_time(thematic_time_display());
+		    $postmeta .= '</abbr></span>';
+
+		//a spacer
+    	$postmeta .= '</a></span><span class="meta-sep meta-sep-entry-date"> | </span>';
+
+		//comment count
+		if (comments_open()) {
+        	$postcommentnumber = get_comments_number();
+	        if ($postcommentnumber > '1') {
+    	        $postmeta .= ' <span class="comments-link"><a href="' . get_permalink() . '#comments" title="' . __('Comment on ', 'thematic') . the_title_attribute('echo=0') . '">';
+        	    $postmeta .= get_comments_number() . __(' Comments', 'thematic') . '</a></span>';
+        	} elseif ($postcommentnumber == '1') {
+            	$postmeta .= ' <span class="comments-link"><a href="' . get_permalink() . '#comments" title="' . __('Comment on ', 'thematic') . the_title_attribute('echo=0') . '">';
+	            $postmeta .= get_comments_number() . __(' Comment', 'thematic') . '</a></span>';
+    	    } elseif ($postcommentnumber == '0') {
+            	$postmeta .= ' <span class="comments-link"><a href="' . get_permalink() . '#comments" title="' . __('Comment on ', 'thematic') . the_title_attribute('echo=0') . '">';
+	            $postmeta .= __('Leave a comment', 'thematic') . '</a></span>';
+    	    }
+	    } else {
+	        $postmeta .= ' <span class="comments-link comments-closed-link">' . __('Comments closed', 'thematic') .'</span>';
+    }
+		
+
+
+    // Display edit link
+    if (current_user_can('edit_posts')) {
+        $postmeta .= ' <span class="meta-sep meta-sep-edit">|</span> ' . '<span class="edit">' . $posteditlink . '</span>';
+    }
+
+	//close the meta
+    $postmeta .= "</div><!-- .entry-meta -->\n";
+
+	return $postmeta;
+
+
+	}
+
+add_filter('thematic_postheader_postmeta','toughbubbles_postheader_postmeta')
+
+	
 
 ?>

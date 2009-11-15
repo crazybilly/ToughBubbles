@@ -1,7 +1,5 @@
 create new style sheet for mobile users?
-hide 'skip to content' link
-
-what generates the menu?
+*hide 'skip to content' link
 
 Typography
 *	vertical rythym
@@ -10,13 +8,21 @@ Typography
 *	write up teh @font-face code
 
 
-get columns working
-Figure out how to edit a/o style the meta to look right
-rethink how you use the asides
+*get columns working
+*Figure out how to edit a/o style the meta to look right
+*	get the meta displayed correctly
+*rethink how you use the asides
 Find something better for the twitter side, something you can tweak, arrange, etc
-Fix post-title link colors
-menu needs fixing
-
-
-
-
+	and that loads faster
+*Fix post-title link colors
+Fix top menu
+Single pages
+	*get subheading in single pages (need to confirm this)
+	get rid of twitter sidebar area
+	style comments/input form
+pullquotes style
+blockquote style?
+*style the search field
+do you want to do the front page as a single post (and excerpt?)
+hanging bullets or indented?
+profile pic - shape up

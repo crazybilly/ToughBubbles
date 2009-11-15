@@ -69,10 +69,24 @@ h1, h2, h3, h4, h5, h6 {
 p, ul, ol, dd, pre {
     margin: 1.5em 0; 
 }
+
 pre, code {
         font: 10pt Monaco, monospace;
         line-height: 1.5;
 }
+
+a {
+	color: #404040;
+}
+
+	a:hover {
+		color: black;
+	//	font-weight: bold;
+		}
+	a:visited {
+		color: #999;
+		}
+
 
 #wrapper {
 	width: 960px;
@@ -126,6 +140,7 @@ pre, code {
 
 .menu ul {
 	margin-top: 8px; /* use to adjust vertical position */
+	margin-left: 20px;
 	}
 
 .menu li {
@@ -236,9 +251,9 @@ pre, code {
 
 	.post {
 		margin-bottom: 1em;
-		width: 360px;
+		width: 400px;
 		border-right: 1px solid #bbb;
-		padding: 0 40px;
+		padding: 0 20px;
 		float: left;
 		}
 		
@@ -246,11 +261,30 @@ pre, code {
 	.entry-title {
 		font-size: 3em;
 		line-height: 1.133334em;
-		margin: 0 0 0.566667em 0;
+	/*	margin: 0 0 0.566667em 0; */
+	}
+
+		.entry-title a {
+			color: #404040;
+			text-decoration: none;
+			}
+	
+		.entry-title a:hover {
+			text-decoration: underline;
+			}
+	
+	.subtitle {
+		font-size: 2em;
+		line-height: 2.077em;
+		margin-bottom: .26666667em; 
 	}
 
 
 	.entry-meta {
+		color: #999;
+		border-top: 1px solid #bbb;
+		border-bottom: 1px solid #bbb;
+		padding: 0.566666666em 0; 
 		}
 
 		.meta-sep {
@@ -262,6 +296,24 @@ pre, code {
 			font-size: 8pt;
 			}
 
+		.entry-meta a {
+			color: #999;
+			text-decoration: none;
+			}
+
+		.entry-meta a:hover {
+			text-decoration: underline;
+			}
+		
+		.entry-meta a:visited {
+			color: #999;
+			text-decoration: none;
+			}
+
+		.entry-meta abbr {
+			border: none;
+			}
+	
 	.entry-content {
 		line-height: 1.75;
 	}
@@ -271,6 +323,20 @@ pre, code {
 		margin-top: 1.0625em;
 		margin-bottom: 2.125em;
 		}
+
+		.entry-utility a {
+			color: #999;
+			text-decoration: none;
+			}
+
+		.entry-utility a:hover {
+			text-decoration: underline;
+			}
+		
+		.entry-utility a:visited {
+			color: #999;
+			text-decoration: none;
+			}
 
 #nav-below {
 	display: none;
@@ -288,16 +354,34 @@ pre, code {
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	border: 1px solid #BFBFBF;
+	line-height: 1.666666666;
 
 	}
 
 .aside li {
 	list-style: none;
+	margin-bottom: 3em;
 	}
+
+.aside li li {
+	margin: 0;
+	}
+
+#primary {
+	padding-top: 36px;
+	}
+
+.aside #search #s {
+	margin: 1em 0;
+	}
+
+	
+	
 
 
 /* Footer */
 
 #footer {
 	clear: both;
+	padding: 1em 0 0 280px;
 	}
