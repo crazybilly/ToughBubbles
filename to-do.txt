@@ -17,12 +17,14 @@ Find something better for the twitter side, something you can tweak, arrange, et
 *Fix post-title link colors
 Fix top menu
 Single pages
-	*get subheading in single pages (need to confirm this)
-	get rid of twitter sidebar area
-	style comments/input form
+	*get subheading in single pages 
+	*get rid of twitter sidebar area
+	*style comments/input form
 pullquotes style
 blockquote style?
 *style the search field
 do you want to do the front page as a single post (and excerpt?)
 hanging bullets or indented?
 profile pic - shape up
+
+Category/Tag/Archive page titles need styled

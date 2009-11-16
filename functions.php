@@ -131,8 +131,72 @@ function toughbubbles_postheader_postmeta() {
 
 	}
 
-add_filter('thematic_postheader_postmeta','toughbubbles_postheader_postmeta')
+add_filter('thematic_postheader_postmeta','toughbubbles_postheader_postmeta');
 
 	
+//change menu around a bit
+
+//remove the original access section first
+function remove_thematic_actions() {
+	remove_action('thematic_header','thematic_access',9);
+	}
+
+add_action('init','remove_thematic_actions');
+
+//now add the stuff back in
+function toughbubbles_access () {
+
+	?>
+	<div id="access" class="menu sf-menu">
+		<div class="skip-link">
+			<a href="#content" title="<? _e("Skip navigation to the content", "thematic") ?>"
+				><? _e("Skip to content", "thematic") ?>
+			</a>
+		</div>
+			
+<?
+		//Categories
+		wp_dropdown_categories();
+
+/* USE THIS EXAMPLE TO GET THESE THINGS IN ORDER (ALSO WRAP THEM ALL IN AN ul?) --------------------
+----------------------------------------------------------------------------------------------------
+
+		<li id="categories">
+	<h2><?php _e('Posts by Category'); ?></h2>
+	<form action="<?php bloginfo('url'); ?>/" method="get">
+<?php
+	$select = wp_dropdown_categories('show_option_none=Select category&show_count=1&orderby=name&echo=0');
+	$select = preg_replace("#<select([^>]*)>#", "<select$1 onchange='return this.form.submit()'>", $select);
+	echo $select;
+?>
+	<noscript><input type="submit" value="View" /></noscript>
+	</form>
+</li> */
+		//Tags
+		//Archives
+		?><select name="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'> 
+			<option value="">
+				<?php echo attribute_escape(__('Archives')); ?>
+			</option> 
+		
+			<?php wp_get_archives('type=yearly&format=option'); ?> 
+		</select><?
+		//wp_get_archives('format=option');
+		//Pages
+		wp_dropdown_pages();
+		//Search
+		get_search_form();
+	
+	?> 
+	
+	</div><!--access--> <?
+
+
+}
+
+add_action ('thematic_header','toughbubbles_access',9);
+
+
+
 
 ?>

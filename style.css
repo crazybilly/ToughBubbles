@@ -149,8 +149,14 @@ a {
 	margin-right: 13px;  /* needs changed */
 	}
 
+	.menu li:after {
+		content:url(images/drop-down.png);
+		}
+
+
 .menu a {
 	color: #404040;
+	text-decoration: none;
 }
 
 .menu a.hover {
@@ -220,6 +226,10 @@ a {
 	margin-top: 20px; /* just to make it easier to see stuff -change later */
 	}
 
+.singular #main {
+	margin-top: 60px;
+	}
+
 #container {
 	background: url(images/content-fill.png) top left;
 	float: right;
@@ -229,6 +239,7 @@ a {
 	-webkit-border-radius: 20px;
 	border: 1px solid #BFBFBF;
 	}
+
 
 #content {
 	float: left;
@@ -256,6 +267,12 @@ a {
 		padding: 0 20px;
 		float: left;
 		}
+	
+		/* when it's on a single page, make it full width */
+		.singular .post {
+			border-right: none;
+			width: 650px;
+			}
 		
 
 	.entry-title {
@@ -341,6 +358,19 @@ a {
 #nav-below {
 	display: none;
 	}
+
+#comments {
+	margin: 0 0 20px 20px;
+	}
+
+	#form-allowed-tags {
+		color: #999;
+		font-size: .866666em;
+		}
+
+	#form-allowed-tags pre,code {
+		font-size: .866666em;
+		}
 
 /* Sidebar */
 
