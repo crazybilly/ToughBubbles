@@ -51,7 +51,9 @@ function twitter_client() {
 }
 
 //insert twitter
-add_action ('thematic_indexloop','twitter_client');
+//temporarily removed to speed up debugging
+//add_action ('thematic_indexloop','twitter_client');
+
 
 
 //add subtitle (via wp subtitle plugin)
@@ -158,7 +160,7 @@ function toughbubbles_access () {
 		//Categories
 		wp_dropdown_categories();
 
-/* USE THIS EXAMPLE TO GET THESE THINGS IN ORDER (ALSO WRAP THEM ALL IN AN ul?) --------------------
+/* USE THIS EXAMPLE TO GET THESE THINGS IN ORDER (ALSO WRAP THEM ALL IN AN ul) --------------------
 ----------------------------------------------------------------------------------------------------
 
 		<li id="categories">
@@ -171,8 +173,68 @@ function toughbubbles_access () {
 ?>
 	<noscript><input type="submit" value="View" /></noscript>
 	</form>
-</li> */
+</li>
+<?*/ 
 		//Tags
+	
+$tags = wp_tag_cloud('smallest=100&largest=100&unit=%&number=0&format=array&echo=0');
+
+//for debugging print the tag array
+//print_r ($tags);
+
+
+$i=0;
+foreach ($tags as $val) {
+		unset ($matches);
+			$tagmatch = "/>([a-z]+)<\/a/i";
+		preg_match ($tagmatch,$val,$matches);
+		$newtags[$i] = $matches[1];
+		
+			$urlmatch = "/a href='(.*)' class/";
+			//$urlmatch = "/a href/i";
+		unset ($matches);
+		preg_match ($urlmatch,$val,$matches);
+		$newtagURLs[$i] = $matches[1];
+
+	$i++;
+	}
+	/* for debugging -------- 	
+		echo "NEW TAGS";	
+		print_r ($newtags);
+		echo "NEW TAG URLS";	
+		print_r ($newtagURLs);
+		echo "end debugging";
+	*/
+//combine the URLs and the tag name
+$tagsForMenu = array_combine($newtagURLs,$newtags);
+
+//sort them in alphabetical order
+sort($tagsForMenu);
+
+
+$result = array();
+foreach ($tagsForMenu as $string) {
+
+	//get the first letter and capitalize it
+   	$firstLetter = strtoupper(substr($string, 0, 1));
+    $result[$firstLetter][] = $string;
+	
+	}
+
+
+foreach(array_keys($result) as $letter)
+//foreach (str_split("ABCDEFGHIJKLMNOPQRSTUVWXYZ") as $letter)
+
+{
+    echo "<li>$letter</li>\n<ul>";
+    foreach ($result[$letter] as $string)
+    {
+        echo "<li>$string</li>\n";
+    }
+    echo "</ul>\n</li>\n";
+}
+
+
 		//Archives
 		?><select name="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'> 
 			<option value="">
