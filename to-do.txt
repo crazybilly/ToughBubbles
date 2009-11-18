@@ -28,3 +28,5 @@ hanging bullets or indented?
 profile pic - shape up
 
 Category/Tag/Archive page titles need styled
+
+Make sure @font-face rules are working right (I don't think they are)
