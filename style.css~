@@ -130,7 +130,6 @@ a {
 
 /* Nav */
 
-/*
 .menu {
 	background: url(images/nav.png) no-repeat;
 	width: 100%;
@@ -143,14 +142,14 @@ a {
 	}
 
 .menu ul {
-	margin-top: 8px; 
+	margin-top: 8px; /* use to adjust vertical position */
 	margin-left: 20px;
 	}
 
 .menu li {
 	display: inline;
 	margin-left: 7px;
-	margin-right: 13px;
+	margin-right: 13px;  /* needs changed */
 	}
 
 	.menu li:after {
@@ -171,7 +170,6 @@ a {
 	color: #404040;
 }
 
-	*/
 #nav-above {
 	display: none;
 	}

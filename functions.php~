@@ -173,9 +173,7 @@ function toughbubbles_access () {
 			<noscript><input type="submit" value="View" /></noscript>
 			</form>
 				 */
-			wp_list_categories('title_li=');
-?>
--->
+			wp_list_categories('title_li=';
 
 		</li>
 		

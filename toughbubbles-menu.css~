@@ -75,7 +75,7 @@ ul.sf-menu li li li.sfHover ul {
 }
 
 /*** THEMATIC SKIN ***/
-/* .sf-menu {
+.sf-menu {
     border-right:1px solid #ccc;
 	float:left;
 }
@@ -92,7 +92,7 @@ ul.sf-menu li li li.sfHover ul {
     border-bottom-color:#fff;
 }
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-	/*color:			#404040;
+	color:			#666;
 }
 .sf-menu li {
 	background:		#fff;
@@ -116,7 +116,6 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
 	top:32px; /* overriding essential styles */
-	/*
 }
 .sf-menu ul ul {
     margin-top:0;
@@ -128,4 +127,4 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu ul a:hover {
     color: #FF4B33;
 }
-*/
+
