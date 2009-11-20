@@ -15,6 +15,8 @@
 	background: url(images/nav.png) no-repeat;
 	position: absolute;
 	top: 0;
+	height: 40px;
+	padding: 2px 12px 12px 20px;
 	}
 
 /*** ESSENTIAL STYLES ***/
@@ -32,6 +34,7 @@
 }
 .sf-menu ul li {
 	/*width:			100%;*/
+	margin-right: 40px;
 }
 .sf-menu li:hover {
 	visibility:		inherit; /* fixes IE7 'sticky bug' */
@@ -43,10 +46,19 @@
 .sf-menu a {
 	display:		block;
 	position:		relative;
+	background:		transparent url(images/drop-down.png) no-repeat scroll right center;
+	padding: 		10px 23px 16px 0;
 }
 
 .sf-menu ul ul {
 	top:			-999em;
+	background: url(images/nav.png) no-repeat; /* probably need to redo this for child menus */
+	width: 920px;
+	margin-top: 2px;
+	}
+
+.sf-menu ul ul a {
+	background: none;
 	}
 	
 .sf-menu li:hover ul,

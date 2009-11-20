@@ -15,6 +15,8 @@
 	background: url(images/nav.png) no-repeat;
 	position: absolute;
 	top: 0;
+	height: 40px;
+	padding: 2px 12px 12px 20px;
 	}
 
 /*** ESSENTIAL STYLES ***/
@@ -32,6 +34,7 @@
 }
 .sf-menu ul li {
 	/*width:			100%;*/
+	margin-right: 40px;
 }
 .sf-menu li:hover {
 	visibility:		inherit; /* fixes IE7 'sticky bug' */
@@ -43,10 +46,19 @@
 .sf-menu a {
 	display:		block;
 	position:		relative;
+	background:		transparent url(images/drop-down.png) no-repeat scroll right center;
+	padding: 		10px 23px 10px 0;
 }
 
 .sf-menu ul ul {
 	top:			-999em;
+	background: url(images/nav.png) no-repeat; /* probably need to redo this for child menus */
+	width: 920px;
+	margin-top: 2px;
+	}
+
+.sf-menu ul ul a {
+	background: none;
 	}
 	
 .sf-menu li:hover ul,
@@ -75,7 +87,7 @@ ul.sf-menu li li li.sfHover ul {
 }
 
 /*** THEMATIC SKIN ***/
-.sf-menu {
+/* .sf-menu {
     border-right:1px solid #ccc;
 	float:left;
 }
@@ -92,7 +104,7 @@ ul.sf-menu li li li.sfHover ul {
     border-bottom-color:#fff;
 }
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-	color:			#666;
+	/*color:			#404040;
 }
 .sf-menu li {
 	background:		#fff;
@@ -116,6 +128,7 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
 	top:32px; /* overriding essential styles */
+	/*
 }
 .sf-menu ul ul {
     margin-top:0;
@@ -127,4 +140,4 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu ul a:hover {
     color: #FF4B33;
 }
-
+*/

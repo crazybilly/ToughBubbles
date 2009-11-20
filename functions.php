@@ -164,19 +164,10 @@ function toughbubbles_access () {
 ?>
 		<li id="categories">
 			<a title="Categories"><?php _e('Categories'); ?></a>
-		<!--	<form action="<?php bloginfo('url'); ?>/" method="get">
-				<?php /*
-					$select = wp_dropdown_categories('show_option_none=Select category&show_count=1&orderby=name&echo=0');
-					$select = preg_replace("#<select([^>]*)>#", "<select$1 onchange='return this.form.submit()'>", $select);
-					echo $select;
-?>
-			<noscript><input type="submit" value="View" /></noscript>
-			</form>
-				 */
-			wp_list_categories('title_li=');
-?>
--->
-
+				<ul id="categories_list">
+					<? wp_list_categories('title_li='); ?>
+				</ul>
+		
 		</li>
 		
 		<li id="Tags">
@@ -241,18 +232,13 @@ foreach(array_keys($result) as $letter)
 </li>
 <li>
 	<a title="Archives">Archives</a>
-
+		<ul id="archives_list">
 <?
 		//Archives - need to put into a real list
-		?><select name="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'> 
-			<option value="">
-				<?php echo attribute_escape(__('Archives')); ?>
-			</option> 
-		
-			<?php wp_get_archives('type=yearly&format=option'); ?> 
-		</select><?
-		//wp_get_archives('format=option');
+		wp_get_archives();
+
 ?>
+		</ul>
 </li>
 <li>	
 	<a title="Pages">Pages</a>
