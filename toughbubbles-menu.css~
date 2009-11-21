@@ -16,7 +16,7 @@
 	position: absolute;
 	top: 0;
 	height: 40px;
-	padding: 2px 12px 12px 20px;
+	padding: 2px 12px 12px 0px;
 	}
 
 /*** ESSENTIAL STYLES ***/
@@ -35,6 +35,7 @@
 .sf-menu ul li {
 	/*width:			100%;*/
 	margin-right: 40px;
+	margin-left: 20px
 }
 .sf-menu li:hover {
 	visibility:		inherit; /* fixes IE7 'sticky bug' */
@@ -47,7 +48,7 @@
 	display:		block;
 	position:		relative;
 	background:		transparent url(images/drop-down.png) no-repeat scroll right center;
-	padding: 		10px 23px 10px 0;
+	padding: 		10px 23px 16px 0;
 }
 
 .sf-menu ul ul {
@@ -63,19 +64,30 @@
 	
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
-	left:			0;
-	top:			2.5em; /* match top ul list item height */
+	left:			170px;
+	top:			38px; /* match top ul list item height */
 	z-index:		99;
+	position: 		fixed;
 }
+
+.sf-menu li:hover ul li,
+.sf-menu li.sfHover ul li {
+	position: absolute;
+}
+
+
+
 ul.sf-menu li:hover li ul,
 ul.sf-menu li.sfHover li ul {
 	top:			-999em;
 }
+
 ul.sf-menu li li:hover ul,
 ul.sf-menu li li.sfHover ul {
 	left:			10em; /* match ul width */
 	top:			0;
 }
+
 ul.sf-menu li li:hover li ul,
 ul.sf-menu li li.sfHover li ul {
 	top:			-999em;
