@@ -19,7 +19,18 @@
 	padding: 2px 12px 12px 0px;
 	}
 
-/*** ESSENTIAL STYLES ***/
+/* Search form */
+#menu_search {
+	width: 395px;
+	text-align: right;
+	}
+
+	#menu_search form {
+		margin-top: 6px;
+		}
+
+
+/*** HORIZONTAL 3-LEVEL DROPDOWN ***/
 .sf-menu, .sf-menu * {
 	margin:			0;
 	padding:		0;
@@ -47,15 +58,19 @@
 .sf-menu a {
 	display:		block;
 	position:		relative;
-	background:		transparent url(images/drop-down.png) no-repeat scroll right center;
+	background:		transparent url(images/drop-down.png) no-repeat scroll right 6px;
 	padding: 		10px 23px 16px 0;
 }
 
 .sf-menu ul ul {
 	top:			-999em;
-	background: url(images/nav.png) no-repeat; /* probably need to redo this for child menus */
 	width: 920px;
+	background: url(images/nav2.png) no-repeat;
 	margin-top: 2px;
+	}
+
+.sf-menu ul ul li {
+	float: left;
 	}
 
 .sf-menu ul ul a {
@@ -76,33 +91,43 @@
 	margin-right: 10px;
 }
 
-ul.sf-menu li:hover li ul,
-ul.sf-menu li.sfHover li ul {
-	top:			-999em;
+/* hide 3rd level */
+.sf-menu li:hover ul ul,
+.sf-menu li.sfHover ul ul {
+	display: none;
+	/*top: -999em; */
+	position: relative;
 }
 
-ul.sf-menu li li:hover ul,
-ul.sf-menu li li.sfHover ul {
-	left:			10em; /* match ul width */
-	top:			0;
+/* show 3rd level */
+/*.sf-menu li:hover ul, */
+.sf-menu li li:hover ul, 
+.sf-menu li.sfhover ul, 
+.sf-menu li li.sfhover ul,
+.sf-menu li li:hover ul:hover {
+	display: inherit;
+	 top: 77px;
+	 width: 880px;
+	background: url(images/nav3.png) no-repeat; /* probably need to redo this for child menus */
+	 position: fixed;
+	 left: 190px;
 }
 
+/* not necessary? 
 ul.sf-menu li li:hover li ul,
 ul.sf-menu li li.sfHover li ul {
 	top:			-999em;
 }
 ul.sf-menu li li li:hover ul,
 ul.sf-menu li li li.sfHover ul {
-	left:			10em; /* match ul width */
+	left:			10em; /* match ul width 
 	top:			0;
 }
 
+*/
+
 /* for the 3rd level ul */
 	/* 
-	 top: 78px;
-	 width: 880px;
-	 position: fixed;
-	 left: 190px;
  }
 	 */
 

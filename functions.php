@@ -249,7 +249,7 @@ foreach(array_keys($result) as $letter)
 ?>
 
 </li>
-<li>
+<li id="menu_search">
 <?
 		//Search
 		get_search_form();
