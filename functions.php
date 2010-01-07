@@ -139,13 +139,15 @@ add_filter('thematic_postheader_postmeta','toughbubbles_postheader_postmeta');
 //change menu around a bit
 
 //remove the original access section first
-function remove_thematic_actions() {
+function remove_thematic_menu() {
 	remove_action('thematic_header','thematic_access',9);
 	}
 
-add_action('init','remove_thematic_actions');
+add_action('init','remove_thematic_menu');
 
 //now add the stuff back in
+
+// in retrospect, this function isn't getting used - it needs to be deleted or commented out
 function toughbubbles_access () {
 
 	?>
@@ -262,9 +264,5 @@ foreach(array_keys($result) as $letter)
 
 }
 
-add_action ('thematic_header','toughbubbles_access',9);
+//add_action ('thematic_header','toughbubbles_access',9);
 
-
-
-
-?>

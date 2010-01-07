@@ -89,6 +89,7 @@ a {
 	a:visited {
 		color: #999;
 		}
+	
 
 
 #wrapper {
@@ -204,6 +205,7 @@ a {
 #content {
 	float: left;
 	width: 680px;
+	padding-left: 10px;
 	}
 
 	/* Twitter */
@@ -315,13 +317,28 @@ a {
 			text-decoration: none;
 			}
 
+	#content h3 {
+		font-size: 133%;
+		}
+
+
+#nav-above {
+	display: none;
+	}
+
 #nav-below {
 	display: none;
 	}
 
+
 #comments {
 	margin: 0 0 20px 20px;
 	}
+
+
+	.comment {
+		margin: 20px 0 40px 20px;
+		}
 
 	#form-allowed-tags {
 		color: #999;
@@ -331,6 +348,41 @@ a {
 	#form-allowed-tags pre,code {
 		font-size: .866666em;
 		}
+
+	.avatar {
+		float: right;
+		margin-right: 240px;
+		}
+
+	.comment-author span {
+		font-size: 18px;
+		line-height: 1.5;
+    	font-family: "Fontin SmallCaps", Georgia, Arial, sans-serif;
+		}	
+
+	.comment-meta {
+		color: #999999;
+		font-size: 90%;
+		}
+
+	.comment-meta a {
+		color: #999999;
+		font-size: 90%;
+		}
+	
+		.comment-meta a:visited {
+		color: #999999;
+		font-size: 90%;
+		}
+
+	#comment-notes {
+		color: #999999;
+		}
+
+	#submit {
+		font-size: 100%;
+		}
+
 
 /* Sidebar */
 
