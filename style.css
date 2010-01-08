@@ -184,12 +184,14 @@ a {
 /* Main */
 
 #main {
-	margin-top: 20px; /* just to make it easier to see stuff -change later */
-	}
-
-.singular #main {
 	margin-top: 60px;
 	}
+
+/*different top margin due to promo box */ 
+.home #main {
+	margin-top: 20px;
+	}
+
 
 #container {
 	background: url(images/content-fill.png) top left;
@@ -319,6 +321,12 @@ a {
 
 	#content h3 {
 		font-size: 133%;
+		}
+
+	blockquote {
+		margin: 0 6em 0 3em;
+		background: url(images/quotes.png) no-repeat top left;
+		min-height: 130px;
 		}
 
 
