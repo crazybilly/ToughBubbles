@@ -30,3 +30,9 @@ profile pic - shape up
 Make sure @font-face rules are working right (I don't think they are)
 home link on title - NO CLUE HOW TO DO THAT
 * rss badge link
+
+
+Shape Up for distribution
+	1. * delete the unnecessary crap
+	2. * give credit for fonts?
+	3. create a way to change promo text, twitter name, etc 

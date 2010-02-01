@@ -46,13 +46,9 @@ Licenced under the Gnu Public License or Creative Commons BY-SA, whichever is mo
 @font-face {
 	font-family: "Fontin SmallCaps";
 	src: url(fonts/Fontin-SmallCaps.ttf) format("truetype");
+	/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */
 }
 
-/*
-@font-face {
-	font-family: "Junction Regular";
-	src: url(fonts/Junction.otf) format("opentype");
-}*/
 
 @font-face {
 	font-family: "Droid Sans";
@@ -446,7 +442,29 @@ a {
 
 /* Footer */
 
+.footer-credits {
+	clear: both;
+	margin-left: 280px;
+	padding-top: 1em;
+	}
+
+	.footer-credits h2 {
+		display: inline;
+		}
+
+	.footer-credits ul {
+		display: inline;
+		}
+
+		.footer-credits li {
+			display: inline;
+			margin-left: 1em;
+			}
+
+
 #footer {
 	clear: both;
-	padding: 1em 0 0 280px;
+	padding:  0 0 0 280px;
 	}
+
+

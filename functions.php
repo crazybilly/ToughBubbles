@@ -142,124 +142,17 @@ function remove_thematic_menu() {
 
 add_action('init','remove_thematic_menu');
 
-//now add the stuff back in
-
-// in retrospect, this function isn't getting used - it needs to be deleted or commented out
-function toughbubbles_access () {
-
+//add credits to the footer
+function footer_credits() {
 	?>
-	<div id="access" class="menu sf-menu">
-		<div class="skip-link">
-			<a href="#content" title="<? _e("Skip navigation to the content", "thematic") ?>"
-				><? _e("Skip to content", "thematic") ?>
-			</a>
+		<div class="footer-credits">
+			<h2>Font Credits:</h2>
+			<ul>
+				<li><a href="http://friedrichalthausen.de/2006/01/01/vollkorn/">Vollkorn</a>: <a href="http://creativecommons.org/licenses/by/2.0/de/">CC-BY</a></li>
+				<li><a href="http://www.exljbris.com">Fontin</a>: by <a href="http://www.exljbris.com">www.exljbris.nl</a></li>
+			</ul>
 		</div>
-		<ul id="top-menu">	
-<?
-		//Categories
-			//for just a select box:
-			//	wp_dropdown_categories();
-
-?>
-		<li id="categories">
-			<a title="Categories"><?php _e('Categories'); ?></a>
-				<ul id="categories_list">
-					<? wp_list_categories('title_li='); ?>
-				</ul>
-		
-		</li>
-		
-		<li id="Tags">
-			<a title="Tags"><? _e('Tags'); ?></a>
-
-<? 
-
-		//Tags
-	
-$tags = wp_tag_cloud('smallest=100&largest=100&unit=%&number=0&format=array&echo=0');
-
-
-$i=0;
-foreach ($tags as $val) {
-		unset ($matches);
-			$tagmatch = "/>([a-z ]+)<\/a/i";
-		preg_match ($tagmatch,$val,$matches);
-		$newtags[$i] = $matches[1];
-		
-			$urlmatch = "/a href='(.*)' class/";
-			//$urlmatch = "/a href/i";
-		unset ($matches);
-		preg_match ($urlmatch,$val,$matches);
-		$newtagURLs[$i] = $matches[1];
-
-	$i++;
-	}
-
-//combine the URLs and the tag name
-$tagsForMenu = array_combine($newtagURLs,$newtags);
-
-//sort them in alphabetical order
-asort($tagsForMenu);
-
-
-$result = array();
-foreach ($tagsForMenu as $url => $string) {
-
-	//get the first letter and capitalize it
-   	$firstLetter = strtoupper(substr($string, 0, 1));
-    $result[$firstLetter][] = Array ($url,$string);
-	
-	}
-
-
-?><ul><?
-
-foreach(array_keys($result) as $letter)
-//foreach (str_split("ABCDEFGHIJKLMNOPQRSTUVWXYZ") as $letter)
-
-{
-    echo "<li><a>$letter</a>\n<ul>";
-    foreach ($result[$letter] as $string)
-    {
-        echo "<li><a href='$string[0]'>$string[1]</a></li>\n";
-    }
-    echo "</ul>\n</li>\n";
+	<?
 }
 
-?></ul>
-
-</li>
-<li>
-	<a title="Archives">Archives</a>
-		<ul id="archives_list">
-<?
-		//Archives - need to put into a real list
-		wp_get_archives();
-
-?>
-		</ul>
-</li>
-<li>	
-	<a title="Pages">Pages</a>
-<?
-		//Pages
-			//wp_dropdown_pages();
-			wp_page_menu();
-?>
-
-</li>
-<li id="menu_search">
-<?
-		//Search
-		get_search_form();
-	?> 
-</li>
-</ul>
-	
-	</div><!--access--> <?
-
-
-}
-
-//add_action ('thematic_header','toughbubbles_access',9);
-
+add_action('thematic_abovefooter','footer_credits');
