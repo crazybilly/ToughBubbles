@@ -8,25 +8,25 @@ Typography
 *	write up teh @font-face code
 
 
-*get columns working
-*Figure out how to edit a/o style the meta to look right
+* get columns working
+* Figure out how to edit a/o style the meta to look right
 *	get the meta displayed correctly
-*rethink how you use the asides
-Find something better for the twitter side, something you can tweak, arrange, etc
+* rethink how you use the asides
+*Find something better for the twitter side, something you can tweak, arrange, etc
 	and that loads faster
-*Fix post-title link colors
-*Fix top menu
-*Single pages
+* Fix post-title link colors
+* Fix top menu
+* Single pages
 	*get subheading in single pages 
 	*get rid of twitter sidebar area
 	*style comments/input form
-*pullquotes style
-*blockquote style?
-*style the search field
+* pullquotes style
+* blockquote style?
+* style the search field
 do you want to do the front page as a single post (and excerpts?)
-*hanging bullets or indented?
+* hanging bullets or indented?
 profile pic - shape up
-*Category/Tag/Archive/Search page titles need styled
+* Category/Tag/Archive/Search page titles need styled
 Make sure @font-face rules are working right (I don't think they are)
-home link on title
-rss badge link
+home link on title - NO CLUE HOW TO DO THAT
+* rss badge link

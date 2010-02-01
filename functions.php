@@ -20,7 +20,7 @@ function index_promo () {
 		<img id="cartoon" src="<? bloginfo('stylesheet_directory'); ?>/images/cartoon.png"/>
 
 		<div id="rss-links">
-			<a href="<? bloginfo_rss('url') ?>"><img src="<? bloginfo('stylesheet_directory'); ?>/images/RSS-badge.png" alt="Subscribe"></a>
+			<a href="<? bloginfo_rss('rss2_url') ?>"><img src="<? bloginfo('stylesheet_directory'); ?>/images/RSS-badge.png" alt="Subscribe"></a>
 			<a href="http://www.twitter.com/crazybilly"><img src="<? bloginfo('stylesheet_directory'); ?>/images/twitter-badge.png" alt="Follow me on Twitter"></a>
 		</div> <!--rss-links-->
 
@@ -37,22 +37,19 @@ add_action('thematic_header','index_promo');
 //add in my twitter updates
 function twitter_client() {
 	if (is_home() & !is_paged()) {	
-		?>	
-		<div id="twitter-content">
-			<h3 id="twitter-title" class="entry-title">Twitter</h3>
-			<ul id="twitter_update_list"></ul>
+	?>	<div id="twitter-content">
+			<h2 id="twitter-title" class="entry-title">Twitter</h2>
+		<?
+				twitter_messages("crazybilly",10,true,true,'<br>#'); 
+		?>
 		</div>
-		
-		<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-		<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/crazybilly.json?callback=twitterCallback2&count=6"></script>	
-
-<?
+		<?
 	}
 }
 
 //insert twitter
 //temporarily removed to speed up debugging
-//add_action ('thematic_indexloop','twitter_client');
+add_action ('thematic_indexloop','twitter_client');
 
 
 

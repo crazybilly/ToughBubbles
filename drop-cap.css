@@ -1,0 +1,16 @@
+span.cap {
+	float: left;
+	font-size: 4.125em;
+	line-height: 1em;
+	margin-bottom: .4em;
+	margin-right: .05em;
+	position: relative;
+	}
+
+span.cap span {
+	display: block;
+	position: relative;
+	top: -.02em;
+	font-family: Fontin Smallcaps; 
+	}
+
